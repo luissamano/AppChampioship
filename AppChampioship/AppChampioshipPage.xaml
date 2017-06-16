@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:AppChampioship" 
+    x:Class="AppChampioship.AppChampioshipPage"
+    BackgroundImage="cinturon.png" >
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Sign Up"  />
+    </ContentPage.ToolbarItems>
+
+    
+    <ContentPage.Content >
+        <StackLayout VerticalOptions="StartAndExpand" Padding="40,100,40,10" >
+
+            <Label Text="Username" Grid.Row="0" TextColor="White"/>
+            <Entry x:Name="usernameEntry" Placeholder="username" />
+            
+            <Label Text="Password" TextColor="White"/>
+            <Entry x:Name="passwordEntry" IsPassword="true" Placeholder="Password"/>
+
+            <Button HorizontalOptions="End" Text="Login On Facebook"  Image="facebook.png" TextColor="White" Clicked="LoginFacebookAsync"/>
+
+        </StackLayout>
+
+        
+    </ContentPage.Content>
+	
+</ContentPage>
